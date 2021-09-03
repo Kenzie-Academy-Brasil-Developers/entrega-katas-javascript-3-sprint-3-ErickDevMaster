@@ -1,53 +1,53 @@
-# Activity: JavaScript Katas (loops and the DOM)
+# Atividade: JavaScript Katas (loops e o DOM)
 
-### Overview ###
+### Visão geral ###
 
-You will create a single web page, with a labelled heading for each individual kata followed by your solution. For these katas, instead of using `console.log()` or `document.write()`, you are **required** to insert your results into the HTML using the `document.createElement()` and `node.appendChild()` methods.
+Você criará uma única página da web, com um título rotulado para cada kata individual seguido de sua solução. Para estes katas, ao invés de usar `console.log ()` ou `document.write ()`, você é ** requerido ** para inserir seus resultados no HTML usando o nó `document.createElement ()` e `. métodos appendChild () `.
 
-The easiest way to get started is by copying the example file from **Mini-Lesson: Inserting new Elements within a Page**. You can copy and paste from the code embedded in the lesson.
+A maneira mais fácil de começar é copiando o arquivo de exemplo da ** Mini-Lesson: Inserting new Elements within a Page **. Você pode copiar e colar do código embutido na lição.
 
-You can keep adding each new kata onto the bottom of that page.
+Você pode continuar adicionando cada novo kata na parte inferior da página.
 
-Several of the katas will use the following sample array, which you can copy and paste into your code:
+Vários dos katas usarão a seguinte matriz de amostra, que você pode copiar e colar em seu código:
 
-```js
+`` `js
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
-```
+`` `
 
-Note that the first 10 katas should seem familiar: they are a repeat of the ones you did in **Assessment: JavaScript Katas 1**. This time you will be inserting the results into your HTML page rather than simply logging them to the console.
+Observe que os primeiros 10 katas devem parecer familiares: eles são uma repetição dos que você fez em ** Avaliação: JavaScript Katas 1 **. Desta vez, você irá inserir os resultados em sua página HTML, em vez de simplesmente registrá-los no console.
 
 ### Katas ###
 
-1.  Display the numbers from 1 to 20. _(1, 2, 3, ...,19, 20)_
-2.  Display the even numbers from 1 to 20. _(2, 4, 6, ..., 18, 20)_
-3.  Display the odd numbers from 1 to 20. _(1, 3, 5, ..., 17, 19)_
-4.  Display the multiples of 5 up to 100. _(5, 10, 15, ..., 95, 100)_
-5.  Display the [square numbers](https://simple.wikipedia.org/wiki/Square_number) from 1 up to 100. _(1, 4, 9, ..., 81, 100)_
-6.  Display the numbers counting backwards from 20 to 1. _(20, 19, 18, ..., 2, 1)_
-7.  Display the even numbers counting backwards from 20 to 1. _(20, 18, 16, ..., 4, 2)_
-8.  Display the odd numbers from 20 to 1, counting backwards. _(19, 17, 15, ..., 3, 1)_
-9.  Display the multiples of 5, counting down from 100 to 1. _(100, 95, 90, ..., 10, 5)_
-10.  Display the square numbers, counting down from 100. _(100, 81, 64, ..., 4, 1)_
-11.  Display the 20 elements of sampleArray. _(469, 755, 244, ..., 940, 472)_
-12.  Display all the even numbers contained in sampleArray. _(244, 758, 450, ..., 940, 472)_
-13.  Display all the odd numbers contained in sampleArray. _(469, 755, 245, ..., 179, 535)_
-14.  Display the square of each element in sampleArray. _(219961, 570025, ..., 222784)_
-15.  Display the sum of all the numbers from 1 to 20.
-16.  Display the sum of all the elements in sampleArray.
-17.  Display the smallest element in sampleArray.
-18.  Display the largest element in sampleArray.
+1. Exiba os números de 1 a 20. _ (1, 2, 3, ..., 19, 20) _
+2. Exiba os números pares de 1 a 20. _ (2, 4, 6, ..., 18, 20) _
+3. Exiba os números ímpares de 1 a 20. _ (1, 3, 5, ..., 17, 19) _
+4. Exiba os múltiplos de 5 a 100. _ (5, 10, 15, ..., 95, 100) _
+5. Exiba os [números quadrados] (https://simple.wikipedia.org/wiki/Square_number) de 1 a 100. _ (1, 4, 9, ..., 81, 100) _
+6. Exiba os números em contagem regressiva de 20 a 1. _ (20, 19, 18, ..., 2, 1) _
+7. Exiba os números pares em contagem regressiva de 20 a 1. _ (20, 18, 16, ..., 4, 2) _
+8. Exiba os números ímpares de 20 a 1, em contagem regressiva. _ (19, 17, 15, ..., 3, 1) _
+9. Exiba os múltiplos de 5, em contagem regressiva de 100 a 1. _ (100, 95, 90, ..., 10, 5) _
+10. Exiba os números quadrados, em contagem regressiva a partir de 100. _ (100, 81, 64, ..., 4, 1) _
+11. Exiba os 20 elementos de sampleArray. _ (469, 755, 244, ..., 940, 472) _
+12. Exiba todos os números pares contidos em sampleArray. _ (244, 758, 450, ..., 940, 472) _
+13. Exiba todos os números ímpares contidos em sampleArray. _ (469, 755, 245, ..., 179, 535) _
+14. Exiba o quadrado de cada elemento em sampleArray. _ (219961, 570025, ..., 222784) _
+15. Exiba a soma de todos os números de 1 a 20.
+16. Exiba a soma de todos os elementos em sampleArray.
+17. Exiba o menor elemento em sampleArray.
+18. Exiba o maior elemento em sampleArray.
 
 
-### Bonus ###
+### Bônus ###
 
-If you would like an additional challenge, try completing each of the above again _without using any `for` or `while` loops_.
+Se você gostaria de um desafio adicional, tente completar cada um dos itens acima novamente _sem usar qualquer loop `for` ou` while`_.
 
-### *Optional* Bonus ###
+### * Opcional * Bônus ###
 
-*These problems involve the use of CSS styling, and require a background knowledge in CSS to complete.
+* Esses problemas envolvem o uso de estilo CSS e exigem um conhecimento prévio em CSS para serem concluídos.
 
-19.  Display 20 solid gray rectangles, each 20px high and 100px wide.
-20.  Display 20 solid gray rectangles, each 20px high, with widths ranging evenly from 105px to 200px (remember #4, above).
-21.  Display 20 solid gray rectangles, each 20px high, with widths in pixels given by the 20 elements of sampleArray.
-22.  As in #21, but alternate colors so that every other rectangle is red.
-23.  As in #21, but color the rectangles with even widths red.
+19. Exiba 20 retângulos cinza sólidos, cada um com 20 px de altura e 100 px de largura.
+20. Exiba 20 retângulos cinza sólidos, cada um com 20 px de altura, com larguras que variam uniformemente de 105 a 200 px (lembre-se do item 4, acima).
+21. Exiba 20 retângulos cinza sólidos, cada um com 20px de altura, com larguras em pixels fornecidas pelos 20 elementos de sampleArray.
+22. Como no item 21, mas alterne as cores para que todos os outros retângulos fiquem vermelhos.
+23. Como no item 21, mas pinte os retângulos com larguras pares de vermelho.
