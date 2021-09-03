@@ -120,7 +120,7 @@ function kata8(num) {
     }
     const body = document.getElementById('bloco_Resu')
     const paragraph = document.createElement('p')
-    paragraph.innerText = '7° '+resu
+    paragraph.innerText = '8° '+resu
     body.appendChild(paragraph)
     return resu
 }
