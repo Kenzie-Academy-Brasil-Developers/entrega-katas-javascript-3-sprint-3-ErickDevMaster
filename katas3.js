@@ -1,98 +1,94 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+function criarElementos (resu){
+    const body = document.getElementById('bloco_Resu')
+    const paragraph = document.createElement('p')
+    paragraph.innerText = resu
+    body.appendChild(paragraph)
+    return 
+}
+
 
 function kata1(num) {
     // implemente o código do kata 1 aqui
     let resu = []
     for(let i = 1 ; i <= num ; i++){
-        resu.push(i)
+        resu. push(i)
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '1° '+resu
-    body.appendChild(paragraph)
-
+    criarElementos(resu)
     return resu
 }
-    kata1(20)
+    kata1(25)
 
 function kata2(num) {
     // implemente o código do kata 2 
     let resu = []
-    for(let i = 1 ; i <= num; i++){
-        if (i % 2 == 0){
+    for(let i = num ; i >= 1 ; i -= 1){
+       
             resu.push(i)
-        }
+
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '2° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
-   kata2(20)
+   kata2(25)
 
 function kata3(num) {
     // implemente o código do kata 3 aqui
     let resu = []
-    for(let i = 1 ; i <= num; i++){
-        if (i % 2 !== 0){
-            resu.push(i)
-        }
-    }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '3° '+resu
-    body.appendChild(paragraph)
+    num = num * -1
+    for(let i = -1 ; i >= num ; i--){
+       
+        resu.push(i)
+
+}
+    criarElementos(resu)
     return resu
 }
-    kata3(20)
+    kata3(25)
 
 function kata4(num) {
     // implemente o código do kata 4 aqui
     let resu = []
-    for(let i = 1 ; i <= num; i++){
-        if (i % 5 == 0){
-            resu.push(i)
-        }
-    }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '4° '+resu
-    body.appendChild(paragraph)
+    num = num * -1
+    for(let i = num ; i < 0 ; i += 1){
+       
+        resu.push(i)
+
+}
+    criarElementos(resu)
     return resu
 }
-    kata4(100)
+    kata4(25)
 
 function kata5(num) {
     // implemente o código do kata 5 aqui
     let resu = []
-    for(let i = 1 ; i <= (num/10); i++){
-        
-            resu.push(i * i)
-
+    num = num * -1
+    for(let i = (num * -1) ; i >= num; i--){
+        if(i % 2 !== 0){
+            resu.push(i)
+        }
+           
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '5° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
-    kata5(100)
+    kata5(25)
 
 function kata6(num) {
     // implemente o código do kata 6 aqui
     let resu = []
-    for(let i = num ; i >= 1 ; i -= 1){
-        resu.push(i)
+    for(let i = 1 ; i <= num ; i++){
+        if (i % 3 == 0){
+            resu.push(i)
+        }
+      
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '6° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
 
     return resu
 }
-    console.log(kata6(20))
+    kata6(100)
 
 function kata7(num) {
     // implemente o código do kata 7 aqui
@@ -102,10 +98,7 @@ function kata7(num) {
             resu.push(i)
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '7° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata7(100)
@@ -118,10 +111,7 @@ function kata8(num) {
             resu.push(i)
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '8° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata8(100)
@@ -133,10 +123,7 @@ function kata9(num) {
             resu.push(i)
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '9° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
  kata9(100)
@@ -148,10 +135,7 @@ function kata10(num) {
             resu.push(sampleArray[i])
         
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '10° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata10(20)
@@ -159,14 +143,13 @@ function kata11() {
     // implemente o código do kata 11 aqui
     let resu = []
     for(let i = 0 ; i < sampleArray.length; i++){
-        
+        if(sampleArray[i] % 2 == 0){
             resu.push(sampleArray[i])
+        }
+    
         
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '11° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata11()
@@ -178,10 +161,7 @@ function kata12() {
             resu.push(sampleArray[i])
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '12° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata12()
@@ -194,10 +174,7 @@ function kata13() {
             resu.push(sampleArray[i])
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '13° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata13()
@@ -210,10 +187,7 @@ function kata14() {
             resu.push(sampleArray[i] * sampleArray[i])
         
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '14° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata14()
@@ -227,10 +201,7 @@ function kata15() {
             resu = b + (i + 1)
             b = resu
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '15° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata15()
@@ -244,10 +215,7 @@ function kata16() {
             resu = b + sampleArray[i+1]
             b = resu
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '16° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata16()
@@ -266,10 +234,7 @@ function kata17() {
             }
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '17° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata17()
@@ -287,10 +252,7 @@ function kata18() {
             }
         }
     }
-    const body = document.getElementById('bloco_Resu')
-    const paragraph = document.createElement('p')
-    paragraph.innerText = '18° '+resu
-    body.appendChild(paragraph)
+    criarElementos(resu)
     return resu
 }
     kata18()
